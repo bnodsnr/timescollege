@@ -1,4 +1,7 @@
 @extends('layouts.master')
 @section('content')
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur tempore aut, ipsam voluptatibus natus quis aliquam velit sapiente illo, quam accusantium nisi consequuntur corrupti? Ipsum delectus ducimus quam rem!</p>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">My Name</h1>
+
+</div>
 @endsection

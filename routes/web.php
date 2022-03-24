@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BlogController;
 
 
 /*
@@ -16,9 +17,18 @@ use App\Http\Controllers\HomeController;
 |
 */
 Route::get('/',[HomeController::class,'index'])->name('home');
-Route::get('profile',[ProfileController::class,'index'])->name('profile');
 
-Route::get('profile-show',[ProfileController::class,'profileShow'])->name('profile-show');
-
+/*------------------------------------------------
+    Blog Routes
+------------------------------------------------*/
 
 Route::get('blog',[BlogController::class,'index'])->name('blog');
+Route::get('addblog',[BlogController::class,'create'])->name('addblog');
+Route::get('saveblog',[BlogController::class,'create'])->name('saveblog');
+
+
+// Route::get('blogList',[BlogModelController::class,'index'])->name('blogList');
+// Route::get('blogCreate',[BlogModelController::class,'create'])->name('blogCreate');
+// Route::get('blogStore',[BlogModelController::class,'store'])->name('blogStore');
+// // Route::get('blogEdit',[BlogModelController::class,'edit'])->name('blogEdit');
+// // Route::get('blog',[BlogModelController::class,'index'])->name('blog');
